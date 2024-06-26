@@ -7,6 +7,7 @@ import { useStoreContext } from "../../contexts/StoreContext";
 import { useEffect, useState } from "react";
 import { createHeadlessEditor } from "@lexical/headless";
 import { $convertToMarkdownString, TRANSFORMERS } from "@lexical/markdown";
+import { LinkNode } from "@lexical/link";
 
 const onError = (error: Error) => console.error(error);
 
@@ -16,7 +17,7 @@ export const MardDownRender = () => {
   const [markddown, setMarkDown] = useState<string>("");
 
   const editor = createHeadlessEditor({
-    nodes: [],
+    nodes: [LinkNode],
     onError: () => {},
   });
 

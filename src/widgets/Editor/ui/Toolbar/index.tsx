@@ -25,6 +25,7 @@ export const Toolbar = () => {
   return (
     <Flex gap={"10px"} justify={"space-between"}>
       <Button onClick={handleMarkDown}>Markdown</Button>
+      <Button>Link</Button>
     </Flex>
   );
 };

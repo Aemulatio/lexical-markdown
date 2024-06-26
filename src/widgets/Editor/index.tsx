@@ -18,6 +18,7 @@ import {
 } from "@lexical/markdown";
 import { Toolbar } from "./ui";
 import { Flex } from "antd";
+import FloatingLinkEditorPlugin from "./lib/FloatingLinkEditorPlugin/FloatingLinkEditorPlugin.tsx";
 
 const onError = (error: Error) => console.error(error);
 
@@ -40,6 +41,7 @@ export const Editor = () => {
           ErrorBoundary={LexicalErrorBoundary}
         />
         <OnChangePlugin />
+        {/*<FloatingLinkEditorPlugin />*/}
         <MarkdownShortcutPlugin
           transformers={[
             ELEMENT_TRANSFORMERS,
