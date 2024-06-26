@@ -1,0 +1,9 @@
+
+.paragraph {
+    margin-block: 0;
+    text-indent: 4ch;
+}
+
+.stop-word {
+    background-color: palevioletred;
+}
