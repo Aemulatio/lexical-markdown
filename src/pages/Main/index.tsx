@@ -1,6 +1,6 @@
 import { Flex } from "antd";
 import { StoreProvider } from "../../contexts/StoreContext";
-import { Editor, MardDownRender } from "../../widgets";
+import { DOMRender, Editor, MardDownRender } from "../../widgets";
 
 export const Main = () => {
   return (
@@ -8,6 +8,7 @@ export const Main = () => {
       <Flex gap="20px" justify={"space-between"}>
         <Editor />
         <MardDownRender />
+        <DOMRender />
       </Flex>
     </StoreProvider>
   );
